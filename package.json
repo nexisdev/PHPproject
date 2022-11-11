@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+        "@rollup/plugin-inject": "^4.0.4",
+        "@tailwindcss/forms": "^0.5.2",
+        "alpinejs": "^3.4.2",
+        "autoprefixer": "^10.4.2",
+        "axios": "^0.27.2",
+        "flowbite": "^1.5.2",
+        "laravel-vite-plugin": "^0.6.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.6",
+        "rollup-plugin-polyfill-node": "^0.10.2",
+        "tailwindcss": "^3.1.0",
+        "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "@ryangjchandler/alpine-clipboard": "^2.2.0",
+        "@walletconnect/web3-provider": "^1.8.0",
+        "chart.js": "^3.9.1",
+        "sweetalert2": "^11.4.29",
+        "toasteur": "^0.5.0",
+        "web3": "^1.7.5",
+        "web3modal": "^1.9.9"
+    }
+}

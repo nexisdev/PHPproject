@@ -1,0 +1,24 @@
+{
+    "name": "zilab/kyc-module",
+    "description": "ZiLab ICO KYC Module.",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "ZiLab Technologies",
+            "email": "info@zilab.co"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Zilab\\KYC\\": ""
+        }
+    }
+}

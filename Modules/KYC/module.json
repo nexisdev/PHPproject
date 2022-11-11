@@ -1,0 +1,11 @@
+{
+    "name": "KYC",
+    "alias": "kyc",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Zilab\\KYC\\Providers\\KYCServiceProvider"
+    ],
+    "files": []
+}

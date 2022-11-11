@@ -1,0 +1,146 @@
+@import "toasteur/dist/themes/toasteur-default.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply inline-flex items-center font-medium rounded-lg text-sm px-4 py-2 focus:outline-none text-gray-900
+    bg-white hover:bg-gray-100 disabled:opacity-25 transition ease-in-out duration-150;
+}
+
+.btn:disabled {
+    @apply opacity-70 cursor-not-allowed;
+}
+
+.btn-sm {
+    @apply py-1 px-2 text-xs;
+}
+
+.btn-icon {
+    @apply py-2.5 px-2.5;
+}
+
+.btn-primary {
+    @apply text-white bg-primary-700 hover:bg-primary-800 active:bg-primary-900;
+}
+
+.btn-primary-alt {
+    @apply text-primary-500 bg-primary-500/20 border-primary-100 hover:bg-primary-500/30 active:bg-primary-500/40;
+}
+
+.btn-secondary {
+    @apply text-white bg-gray-700 hover:bg-gray-800 active:bg-gray-900;
+}
+
+.btn-secondary-alt {
+    @apply !text-gray-500 dark:text-gray-200 !bg-gray-500/20 border-gray-100 hover:!bg-gray-500/30 active:!bg-gray-500/40;
+}
+
+.btn-danger {
+    @apply text-white !bg-red-700 hover:!bg-red-800 active:!bg-red-900;
+}
+
+.btn-danger-alt {
+    @apply !text-red-500 !bg-red-100 border-red-100 hover:!border-red-200 hover:!bg-red-200 active:!bg-red-300;
+}
+
+.btn-success {
+    @apply text-white !bg-green-700 hover:bg-green-800 active:!bg-green-900;
+}
+
+.btn-success-alt {
+    @apply !text-green-500 !bg-green-500/20 border-green-100 hover:!bg-green-500/30 active:!bg-green-500/40;
+}
+
+.btn-warning {
+    @apply text-white !bg-yellow-700 hover:bg-yellow-800 active:!bg-yellow-900;
+}
+
+.btn-warning-alt {
+    @apply !text-yellow-500 !bg-yellow-500/20 border-yellow-100 hover:!bg-yellow-500/30 active:!bg-yellow-500/40;
+}
+
+.sidebar .nav-link {
+    @apply flex items-center p-2 text-base font-normal text-gray-900 dark:text-white rounded-lg transition duration-150;
+}
+
+.sidebar .nav-link-solid {
+    @apply flex items-center p-2 text-base font-normal rounded-lg transition duration-150 !text-white bg-primary-700 hover:!bg-primary-800 active:!bg-primary-900;
+}
+
+.sidebar .nav-link-solid .nav-link-icon {
+    @apply !text-white;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    @apply text-primary-500 bg-primary-500/20;
+}
+
+.sidebar .nav-link .nav-link-icon {
+    @apply w-6 h-6 text-gray-500 dark:text-gray-200 transition duration-150;
+}
+
+.sidebar .nav-link:hover .nav-link-icon,
+.sidebar .nav-link.active .nav-link-icon {
+    @apply text-primary-500;
+}
+
+.form-label {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300;
+}
+
+.form-control {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500
+     focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500;
+}
+
+.form-control:disabled {
+    @apply bg-gray-100 text-gray-500 dark:text-gray-200 dark:bg-gray-600 cursor-not-allowed;
+}
+
+.progress-bar {
+    @apply text-center whitespace-nowrap block text-gray-500 dark:text-gray-200 bg-gray-400 h-3 rounded-full mt-3 mb-16 relative transition duration-300;
+}
+
+.progress-percent {
+    @apply bg-primary-500;
+}
+
+.progress-hcap,
+.progress-scap,
+.progress-psale,
+.progress-percent {
+    @apply absolute top-0 left-0 h-3 rounded-l-full;
+}
+
+.progress-hcap {
+    @apply bg-gray-200;
+}
+
+.progress-scap {
+    @apply bg-gray-400;
+}
+
+.progress-hcap > div:after,
+.progress-scap > div:after,
+.progress-psale > div:after,
+.progress-percent > div:after {
+    @apply absolute top-0 left-1/2 -ml-0.5 w-0.5 h-7 bg-gray-400;
+    content: "";
+}
+
+.progress-hcap > div,
+.progress-scap > div,
+.progress-psale > div,
+.progress-percent > div {
+    @apply absolute right-0 w-32 text-xs  font-medium pt-8 uppercase translate-x-1/2;
+}
+
+.progress-hcap > div span,
+.progress-scap > div span,
+.progress-psale > div span,
+.progress-percent > div span {
+    @apply block text-gray-900 dark:text-white;
+}
